@@ -40,7 +40,14 @@ A collaborative-ready, open-source tool to help job seekers and recruiters compa
 - Keyword Extraction: Automatic identification of key skills and terms from both documents.
 - Similarity Scoring: Calculates and displays a similarity score based on keyword overlap and relevance.
 - Results Display: Highlights matching and missing keywords, and provides a summary report.
-- Basic User Interface: Simple web interface for file upload and results visualization
+- Basic User Interface: Simple web interface for file upload and results visualization.
+
+## Project Structure
+
+- `/backend` — Backend code (APIs, file parsing, NLP)
+- `/frontend` — Frontend code (user interface)
+- `/docs` — Documentation and planning materials
+
 
 ## 🛠️ Getting Started
 
