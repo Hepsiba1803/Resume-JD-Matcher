@@ -44,9 +44,13 @@ A collaborative-ready, open-source tool to help job seekers and recruiters compa
 
 ## Project Structure
 
-- `/backend` — Backend code (APIs, file parsing, NLP)
+- `/backend` — Backend code and backend-specific documentation ([backendplan.md](./backend/backendplan.md))
 - `/frontend` — Frontend code (user interface)
 - `/docs` — Documentation and planning materials
+- `requirements.txt`- For all dependencies of project
+  
+
+
 
 
 ## 🛠️ Getting Started
