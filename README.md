@@ -33,6 +33,15 @@ A collaborative-ready, open-source tool to help job seekers and recruiters compa
    - Missing important terms
    - Suggestions to improve your resume for ATS systems
 
+## Minimum Viable Product (MVP) Features
+
+- Resume and JD File Upload: Users can upload their resume and a job description (PDF, DOCX, or TXT).
+- Text Extraction: The system extracts text from both files for analysis.
+- Keyword Extraction: Automatic identification of key skills and terms from both documents.
+- Similarity Scoring: Calculates and displays a similarity score based on keyword overlap and relevance.
+- Results Display: Highlights matching and missing keywords, and provides a summary report.
+- Basic User Interface: Simple web interface for file upload and results visualization
+
 ## 🛠️ Getting Started
 
 1. **Clone the repository:**
