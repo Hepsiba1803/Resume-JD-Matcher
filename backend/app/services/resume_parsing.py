@@ -28,14 +28,13 @@ async def parse_resume(file):
         with tempfile.NamedTemporaryFile(delete=False, suffix=".docx") as tmp:
             tmp.write(await file.read())
             tmp.flush()
-            tmp_path=tmp.name
-            try:
-                doc=docx.Document(tmp_path)
-                text="\n".join(paragraph.text for paragraph in doc.paragraphs)
-            finally:
-                os.remove(tmp_path)
-            return text
-    else:
-        raise ValueError("Unsupported file type. Please upload a PDF or DOCX file.")
-            
-    
+            tmp_path = tmp.name
+    try:
+        doc = docx.Document(tmp_path)
+        text = "\n".join(paragraph.text for paragraph in doc.paragraphs)
+    except Exception as e:
+        print(f"Error parsing DOCX file: {e}")
+        raise ValueError("Invalid DOCX file format or content.")
+    finally:
+        os.remove(tmp_path)
+    return text
