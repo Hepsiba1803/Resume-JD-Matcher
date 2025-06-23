@@ -33,3 +33,15 @@ A running log of important decisions made throughout the project. Each entry sho
 **Stakeholders:** Project owner (yourself), future contributors.
 
 **Impact:** Guides development and helps onboard future collaborators.
+
+## 2025-06-23
+---
+**Decision:** Skipping Unit testing for speeding up development process
+
+**Rationale:** There is an import error that I couldn't solve while unit testing but manual testing is working. I'll come to it when I have time
+
+**Stakeholders:** Project owner (yourself), future contributors.
+
+**Impact:** Speeding up the development process.
+
+
