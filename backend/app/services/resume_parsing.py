@@ -1,40 +1,29 @@
-import pdfplumber
+import io
 import docx
-import tempfile
-import os 
+import pdfplumber
+from fastapi import UploadFile
 
-async def parse_resume(file):
+async def parse_file_content(file: UploadFile) -> str:
     """
-    Parses a resume file and extracts text from it.
-    
-    Args:
-        file: The file object containing the resume.
-    
-    Returns:
-        str: The extracted text from the resume.
+    Parses the content of an uploaded file (PDF or DOCX) in memory.
     """
+    content = await file.read()
+    
     if file.content_type == 'application/pdf':
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
-            tmp.write(await file.read())
-            tmp.flush()
-            tmp_path = tmp.name
         try:
-            with pdfplumber.open(tmp_path) as pdf:
-                text = "\n".join(page.extract_text() or "" for page in pdf.pages)
-        finally:
-            os.remove(tmp_path)
-        return text
-    elif file.content_type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".docx") as tmp:
-            tmp.write(await file.read())
-            tmp.flush()
-            tmp_path = tmp.name
-    try:
-        doc = docx.Document(tmp_path)
-        text = "\n".join(paragraph.text for paragraph in doc.paragraphs)
-    except Exception as e:
-        print(f"Error parsing DOCX file: {e}")
-        raise ValueError("Invalid DOCX file format or content.")
-    finally:
-        os.remove(tmp_path)
-    return text
+            with pdfplumber.open(io.BytesIO(content)) as pdf:
+                # Ensure text is not None before joining
+                pages = [p.extract_text() for p in pdf.pages if p.extract_text()]
+                return "\n".join(pages)
+        except Exception as e:
+            raise ValueError(f"Error parsing PDF file: {e}")
+            
+    elif file.content_type == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+        try:
+            doc = docx.Document(io.BytesIO(content))
+            return "\n".join([para.text for para in doc.paragraphs])
+        except Exception as e:
+            raise ValueError(f"Error parsing DOCX file: {e}")
+            
+    else:
+        raise ValueError("Unsupported file type. Please upload a PDF or DOCX file.")
