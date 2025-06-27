@@ -1,5 +1,11 @@
 from fastapi import FastAPI
-from app.routes import upload_resume
+from .routes import match_report
 
-app = FastAPI()
-app.include_router(upload_resume.router,prefix="/api", tags=["Resume Upload"])
+app = FastAPI(
+    title="Resume-JD Matcher API",
+    version="1.0.0"
+)
+@app.get("/")
+async def root():
+    return {"message":"Welcome to Resume Parser API"}
+app.include_router(match_report.router,prefix="/api",tags=["Match Report"])
