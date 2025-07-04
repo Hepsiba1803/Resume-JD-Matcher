@@ -44,4 +44,16 @@ A running log of important decisions made throughout the project. Each entry sho
 
 **Impact:** Speeding up the development process.
 
+### 2025-06-28
+---
+
+**Decision:** Replacing Tfidf Vectorization with keyBert model for contextual keyword extraction.
+
+**Rationale:** Tfidf extracts irrevalent keywords but KeyBert extracts useful keywords and phrases
+
+**Stakeholders:** Project owner (yourself), future contributors.
+
+**Impact:** Speeding up the development process.
+
+
 
