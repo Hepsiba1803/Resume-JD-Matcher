@@ -1,0 +1,995 @@
+skill,category
+ajenti,Python Package/Library
+django-suit,Framework/Library
+django-xadmin,Framework/Library
+flask-admin,Framework/Library
+flower,Python Package/Library
+grappelli,Python Package/Library
+wooey,Python Package/Library
+algorithms,technical skill
+pypattyrn,Python Package/Library
+python-patterns,Python Package/Library
+django-simple-captcha,Framework/Library
+django-simple-spam-blocker,Framework/Library
+django-compressor,Framework/Library
+django-pipeline,Framework/Library
+django-storages,Framework/Library
+fanstatic,Python Package/Library
+fileconveyor,Python Package/Library
+flask-assets,Framework/Library
+jinja-assets-compressor,Python Package/Library
+webassets,Python Package/Library
+audiolazy,Python Package/Library
+audioread,Python Package/Library
+beets,Python Package/Library
+dejavu,Python Package/Library
+django-elastic-transcoder,Framework/Library
+eyed3,Python Package/Library
+id3reader,Python Package/Library
+m3u8,Python Package/Library
+mingus,Python Package/Library
+pyaudioanalysis,Python Package/Library
+pydub,Python Package/Library
+pyechonest,Python Package/Library
+talkbox,Python Package/Library
+timeside,Python Package/Library
+tinytag,Python Package/Library
+authomatic,Python Package/Library
+django-allauth,Framework/Library
+django-oauth-toolkit,Framework/Library
+flask-oauthlib,Framework/Library
+oauthlib,Python Package/Library
+python-oauth2,Python Package/Library
+python-social-auth,Python Package/Library
+rauth,Python Package/Library
+sanction,Python Package/Library
+jose,Python Package/Library
+pyjwt,Python Package/Library
+python-jws,Python Package/Library
+python-jwt,Python Package/Library
+bitbake,Python Package/Library
+buildout,Design/UI/UX
+platformio,Python Package/Library
+pybuilder,Design/UI/UX
+scons,Python Package/Library
+django-cms,Framework/Library
+djedi-cms,Framework/Library
+feincms,Framework/Library
+kotti,Framework/Library
+mezzanine,Framework/Library
+opps,Framework/Library
+plone,Framework/Library
+quokka,Framework/Library
+widgy,Python Package/Library
+beaker,Python Package/Library
+diskcache,Python Package/Library
+django-cache-machine,Framework/Library
+django-cacheops,Framework/Library
+django-viewlet,Framework/Library
+dogpile.cache,Python Package/Library
+hermescache,Python Package/Library
+johnny-cache,Python Package/Library
+pylibmc,Python Package/Library
+errbot,Python Package/Library
+coala,Python Package/Library
+code2flow,Python Package/Library
+pycallgraph,Python Package/Library
+flake8,Python Package/Library
+pylama,Python Package/Library
+pylint,Python Package/Library
+mypy,Python Package/Library
+asciimatics,Python Package/Library
+cement,Python Package/Library
+click,Python Package/Library
+cliff,Python Package/Library
+clint,Python Package/Library
+colorama,Python Package/Library
+docopt,Python Package/Library
+gooey,Python Package/Library
+python-fire,Python Package/Library
+python-prompt-toolkit,Python Package/Library
+aws-cli,Cloud/DevOps
+bashplotlib,Python Package/Library
+caniusepython3,Python Package/Library
+cookiecutter,Python Package/Library
+doitlive,Python Package/Library
+howdoi,Python Package/Library
+httpie,Python Package/Library
+mycli,Python Package/Library
+pathpicker,Python Package/Library
+percol,Python Package/Library
+pgcli,Python Package/Library
+saws,Cloud/DevOps
+thefuck,Python Package/Library
+try,Python Package/Library
+python-future,Python Package/Library
+python-modernize,Python Package/Library
+six,Python Package/Library
+opencv,Python Package/Library
+pyocr,Python Package/Library
+pytesseract,Python Package/Library
+simplecv,Python Package/Library
+eventlet,Python Package/Library
+gevent,Python Package/Library
+multiprocessing,Python Package/Library
+threading,Python Package/Library
+tomorrow,Python Package/Library
+uvloop,Python Package/Library
+config,Python Package/Library
+configobj,Python Package/Library
+configparser,Python Package/Library
+profig,Python Package/Library
+python-decouple,Python Package/Library
+cryptography,Python Package/Library
+hashids,Python Package/Library
+paramiko,Python Package/Library
+passlib,Python Package/Library
+pynacl,Python Package/Library
+blaze,Python Package/Library
+orange,Python Package/Library
+pandas,Framework/Library
+cerberus,Python Package/Library
+colander,Python Package/Library
+jsonschema,Python Package/Library
+schematics,Python Package/Library
+valideer,Python Package/Library
+voluptuous,Python Package/Library
+bokeh,Framework/Library
+ggplot,Framework/Library
+matplotlib,Framework/Library
+pygal,Python Package/Library
+pygraphviz,Python Package/Library
+pyqtgraph,Python Package/Library
+seaborn,Framework/Library
+vispy,Python Package/Library
+pickledb,Python Package/Library
+pipelinedb,Tool/Platform
+tinydb,Database
+zodb,Database
+mysql,Database
+mysql-python,Database
+mysqlclient,Database
+oursql,Database
+pymysql,Database
+postgresql,Database
+psycopg2,Python Package/Library
+queries,Python Package/Library
+txpostgres,Database
+apsw,Python Package/Library
+pymssql,Database
+nosql,Database
+cassandra-python-driver,Database
+happybase,Database
+plyvel,Database
+py2neo,Database
+pycassa,Python Package/Library
+pymongo,Database
+redis-py,Database
+telephus,Python Package/Library
+txredis,Database
+arrow,Python Package/Library
+chronyk,Python Package/Library
+dateutil,Python Package/Library
+delorean,Python Package/Library
+moment,Python Package/Library
+pendulum,Python Package/Library
+pytime,Python Package/Library
+pytz,Python Package/Library
+when.py,Python Package/Library
+ipdb,Python Package/Library
+pdb++,Python Package/Library
+pudb,Python Package/Library
+remote-pdb,Python Package/Library
+wdb,Python Package/Library
+line_profiler,Python Package/Library
+memory_profiler,Python Package/Library
+profiling,Python Package/Library
+vprof,Python Package/Library
+caffe,Python Package/Library
+keras,Framework/Library
+mxnet,Framework/Library
+neupy,Python Package/Library
+pytorch,Framework/Library
+tensorflow,Framework/Library
+theano,Framework/Library
+ansible,Cloud/DevOps
+cloud-init,Cloud/DevOps
+cuisine,Design/UI/UX
+docker,Cloud/DevOps
+fabric,Cloud/DevOps
+fabtools,Python Package/Library
+honcho,Python Package/Library
+openstack,Cloud/DevOps
+pexpect,Python Package/Library
+psutil,Tool/Platform
+saltstack,Cloud/DevOps
+supervisor,Tool/Platform
+dh-virtualenv,Tool/Platform
+nuitka,Tool/Platform
+py2app,Python Package/Library
+py2exe,Python Package/Library
+pyinstaller,Tool/Platform
+pynsist,Python Package/Library
+sphinx,Framework/Library
+awesome-sphinxdoc,Framework/Library
+mkdocs,Python Package/Library
+pdoc,Python Package/Library
+pycco,Python Package/Library
+s3cmd,Python Package/Library
+s4cmd,Python Package/Library
+you-get,Python Package/Library
+youtube-dl,Python Package/Library
+alipay,Python Package/Library
+cartridge,Python Package/Library
+django-oscar,Framework/Library
+django-shop,Framework/Library
+merchant,Python Package/Library
+money,Python Package/Library
+python-currencies,Python Package/Library
+forex-python,Python Package/Library
+shoop,Python Package/Library
+emacs,Tool/Platform
+elpy,Python Package/Library
+sublime,Tool/Platform
+anaconda,Tool/Platform
+sublimejedi,Tool/Platform
+vim,Tool/Platform
+jedi-vim,Tool/Platform
+python-mode,Python Package/Library
+youcompleteme,Python Package/Library
+ptvs,Tool/Platform
+visual,Python Package/Library
+python,Programming Language
+magic,Python Package/Library
+liclipse,Python Package/Library
+pycharm,Tool/Platform
+spyder,Tool/Platform
+envelopes,Python Package/Library
+flanker,Python Package/Library
+imbox,Python Package/Library
+inbox.py,Python Package/Library
+lamson,Python Package/Library
+marrow,Python Package/Library
+modoboa,Python Package/Library
+nylas,Python Package/Library
+pipenv,Tool/Platform
+p,Python Package/Library
+pyenv,Python Package/Library
+venv,Python Package/Library
+virtualenv,Tool/Platform
+virtualenvwrapper,Tool/Platform
+imghdr,Python Package/Library
+mimetypes,Python Package/Library
+path.py,Python Package/Library
+pathlib,Python Package/Library
+python-magic,Python Package/Library
+unipath,Python Package/Library
+watchdog,Python Package/Library
+cffi,Python Package/Library
+ctypes,Python Package/Library
+pycuda,Python Package/Library
+swig,Python Package/Library
+deform,Python Package/Library
+django-bootstrap3,Framework/Library
+django-crispy-forms,Framework/Library
+django-remote-forms,Framework/Library
+wtforms,Python Package/Library
+cytoolz,Python Package/Library
+fn.py,Python Package/Library
+funcy,Python Package/Library
+toolz,Python Package/Library
+curses,Python Package/Library
+enaml,Python Package/Library
+flexx,Python Package/Library
+kivy,Python Package/Library
+pyglet,Python Package/Library
+pygobject,Python Package/Library
+pyqt,Python Package/Library
+pyside,Python Package/Library
+pywebview,Python Package/Library
+tkinter,Python Package/Library
+toga,Python Package/Library
+urwid,Python Package/Library
+wxpython,Python Package/Library
+cocos2d,Python Package/Library
+panda3d,Python Package/Library
+pygame,Python Package/Library
+pyogre,Python Package/Library
+pyopengl,Python Package/Library
+pysdl2,Python Package/Library
+renpy,Python Package/Library
+django-countries,Framework/Library
+geodjango,Framework/Library
+geoip,Python Package/Library
+geojson,Python Package/Library
+geopy,Python Package/Library
+pygeoip,Python Package/Library
+beautifulsoup,Framework/Library
+bleach,Python Package/Library
+cssutils,Python Package/Library
+html5lib,Python Package/Library
+lxml,Framework/Library
+markupsafe,Python Package/Library
+pyquery,Python Package/Library
+untangle,Python Package/Library
+weasyprint,Python Package/Library
+xmldataset,Python Package/Library
+xmltodict,Python Package/Library
+grequests,Python Package/Library
+httplib2,Python Package/Library
+requests,Python Package/Library
+treq,Python Package/Library
+urllib3,Python Package/Library
+ino,Python Package/Library
+keyboard,Python Package/Library
+mouse,Python Package/Library
+pingo,Python Package/Library
+pyro,Python Package/Library
+pyuserinput,Python Package/Library
+scapy,Python Package/Library
+wifi,Python Package/Library
+hmap,Python Package/Library
+imgseek,Python Package/Library
+nude.py,Python Package/Library
+pagan,Python Package/Library
+pillow,Python Package/Library
+pybarcode,Python Package/Library
+pygram,Python Package/Library
+python-qrcode,Python Package/Library
+quads,Python Package/Library
+scikit-image,Python Package/Library
+thumbor,Python Package/Library
+wand,Python Package/Library
+clpython,Python Package/Library
+cpython,Python Package/Library
+cython,Python Package/Library
+grumpy,Python Package/Library
+ironpython,Python Package/Library
+jython,Python Package/Library
+micropython,Python Package/Library
+numba,Python Package/Library
+peachpy,Python Package/Library
+pyjion,Python Package/Library
+pypy,Python Package/Library
+pysec,Python Package/Library
+pyston,Python Package/Library
+stackless,Python Package/Library
+interactive,Python Package/Library
+bpython,Python Package/Library
+jupyter,Tool/Platform
+ptpython,Python Package/Library
+babel,Python Package/Library
+pyicu,Python Package/Library
+apscheduler,Python Package/Library
+django-schedule,Framework/Library
+doit,Python Package/Library
+gunnery,Python Package/Library
+joblib,Python Package/Library
+plan,Python Package/Library
+schedule,Python Package/Library
+spiff,Python Package/Library
+taskflow,Python Package/Library
+eliot,Python Package/Library
+logbook,Python Package/Library
+logging,Python Package/Library
+sentry,Python Package/Library
+metrics,Python Package/Library
+nupic,Python Package/Library
+scikit-learn,Framework/Library
+spark,Framework/Library
+vowpal_porpoise,Python Package/Library
+xgboost,Framework/Library
+pyspark,Framework/Library
+luigi,Design/UI/UX
+mrjob,Python Package/Library
+streamparse,Python Package/Library
+dask,Python Package/Library
+pythonlibs,Python Package/Library
+pythonnet,Python Package/Library
+pywin32,Python Package/Library
+winpython,Python Package/Library
+gensim,Framework/Library
+jieba,Python Package/Library
+langid.py,Python Package/Library
+nltk,Framework/Library
+pattern,Python Package/Library
+polyglot,Python Package/Library
+spacy,Framework/Library
+textblob,Python Package/Library
+mininet,Python Package/Library
+pox,Python Package/Library
+pyretic,Python Package/Library
+sdx,Python Package/Library
+asyncio,Python Package/Library
+diesel,Python Package/Library
+pulsar,Python Package/Library
+pyzmq,Python Package/Library
+twisted,Python Package/Library
+txzmq,Python Package/Library
+napalm,Python Package/Library
+django-activity-stream,Framework/Library
+stream-framework,Python Package/Library
+django,Framework/Library
+sqlalchemy,Database
+awesome-sqlalchemy,Database
+orator,Python Package/Library
+peewee,Python Package/Library
+ponyorm,Python Package/Library
+pydal,Python Package/Library
+python-sql,Database
+pip,Tool/Platform
+conda,Tool/Platform
+curdling,Python Package/Library
+pip-tools,Tool/Platform
+wheel,Python Package/Library
+warehouse,Python Package/Library
+bandersnatch,Python Package/Library
+devpi,Python Package/Library
+localshop,Python Package/Library
+carteblanche,Python Package/Library
+django-guardian,Framework/Library
+django-rules,Framework/Library
+sarge,Python Package/Library
+sh,Python Package/Library
+celery,Framework/Library
+huey,Python Package/Library
+mrq,Python Package/Library
+rq,Python Package/Library
+simpleq,Python Package/Library
+annoy,Python Package/Library
+fastfm,Python Package/Library
+implicit,Python Package/Library
+libffm,Python Package/Library
+lightfm,Python Package/Library
+surprise,Python Package/Library
+tensorrec,Python Package/Library
+django-rest-framework,Framework/Library
+django-tastypie,Framework/Library
+flask,Framework/Library
+eve,Python Package/Library
+flask-api-utils,Framework/Library
+flask-api,Framework/Library
+flask-restful,Framework/Library
+flask-restless,Framework/Library
+pyramid,Framework/Library
+cornice,Python Package/Library
+falcon,Framework/Library
+hug,Framework/Library
+restless,Framework/Library
+ripozo,Python Package/Library
+sandman,Framework/Library
+apistar,Framework/Library
+simplejsonrpcserver,Python Package/Library
+simplexmlrpcserver,Python Package/Library
+zerorpc,Python Package/Library
+astropy,Python Package/Library
+bcbio-nextgen,Python Package/Library
+bccb,Python Package/Library
+biopython,Python Package/Library
+cclib,Python Package/Library
+networkx,Python Package/Library
+nipy,Python Package/Library
+numpy,Framework/Library
+obspy,Python Package/Library
+pydy,Python Package/Library
+pymc,Python Package/Library
+rdkit,Python Package/Library
+scipy,Framework/Library
+statsmodels,Python Package/Library
+sympy,Python Package/Library
+zipline,Python Package/Library
+simpy,Python Package/Library
+django-haystack,Framework/Library
+elasticsearch-dsl-py,Database
+elasticsearch-py,Database
+esengine,Python Package/Library
+pysolr,Database
+solrpy,Database
+whoosh,Python Package/Library
+marshmallow,Python Package/Library
+apex,Python Package/Library
+python-lambda,Python Package/Library
+zappa,Python Package/Library
+tablib,Python Package/Library
+marmir,Python Package/Library
+openpyxl,Python Package/Library
+pyexcel,Python Package/Library
+python-docx,Python Package/Library
+relatorio,Python Package/Library
+unoconv,Python Package/Library
+xlsxwriter,Python Package/Library
+xlwings,Python Package/Library
+pdf,Python Package/Library
+pdfminer,Python Package/Library
+pypdf2,Python Package/Library
+reportlab,Python Package/Library
+markdown,Python Package/Library
+mistune,Python Package/Library
+python-markdown,Python Package/Library
+yaml,Python Package/Library
+pyyaml,Python Package/Library
+csvkit,Python Package/Library
+unp,Python Package/Library
+cactus,Python Package/Library
+hyde,Python Package/Library
+lektor,Python Package/Library
+nikola,Python Package/Library
+pelican,Python Package/Library
+tinkerer,Python Package/Library
+django-taggit,Framework/Library
+genshi,Python Package/Library
+jinja2,Framework/Library
+mako,Framework/Library
+hypothesis,Python Package/Library
+mamba,Python Package/Library
+nose,Testing/QA
+nose2,Testing/QA
+pytest,Framework/Library
+robot,Python Package/Library
+unittest,Testing/QA
+green,Python Package/Library
+tox,Testing/QA
+locust,Python Package/Library
+pyautogui,Design/UI/UX
+selenium,Tool/Platform
+sixpack,Python Package/Library
+splinter,Python Package/Library
+doublex,Python Package/Library
+freezegun,Python Package/Library
+httmock,Python Package/Library
+httpretty,Python Package/Library
+mock,Python Package/Library
+responses,Python Package/Library
+vcr.py,Python Package/Library
+factory_boy,Python Package/Library
+mixer,Python Package/Library
+model_mommy,Python Package/Library
+mimesis,Python Package/Library
+fake2db,Python Package/Library
+faker,Python Package/Library
+radar,Python Package/Library
+chardet,Python Package/Library
+difflib,Python Package/Library
+ftfy,Python Package/Library
+fuzzywuzzy,Python Package/Library
+levenshtein,Python Package/Library
+pangu.py,Python Package/Library
+pyfiglet,Python Package/Library
+pypinyin,Python Package/Library
+shortuuid,Design/UI/UX
+unidecode,Python Package/Library
+uniout,Python Package/Library
+xpinyin,Python Package/Library
+slugify,Python Package/Library
+awesome-slugify,Python Package/Library
+python-slugify,Python Package/Library
+unicode-slugify,Python Package/Library
+parser,Python Package/Library
+phonenumbers,Python Package/Library
+ply,Python Package/Library
+pygments,Python Package/Library
+pyparsing,Python Package/Library
+python-nameparser,Python Package/Library
+python-user-agents,Python Package/Library
+sqlparse,Database
+apache-libcloud,Python Package/Library
+boto3,Python Package/Library
+django-wordpress,Framework/Library
+facebook-sdk,Python Package/Library
+facepy,Python Package/Library
+google-api-python-client,API/Integration
+gspread,Python Package/Library
+twython,Python Package/Library
+furl,Python Package/Library
+purl,Python Package/Library
+pyshorteners,Python Package/Library
+short_url,Python Package/Library
+webargs,Python Package/Library
+moviepy,Python Package/Library
+scikit-video,Python Package/Library
+wsgi-compatible,Python Package/Library
+bjoern,Python Package/Library
+fapws3,Python Package/Library
+gunicorn,Python Package/Library
+meinheld,Python Package/Library
+netius,Python Package/Library
+paste,Python Package/Library
+rocket,Python Package/Library
+uwsgi,Python Package/Library
+werkzeug,Python Package/Library
+haul,Python Package/Library
+html2text,Python Package/Library
+lassie,Python Package/Library
+micawber,Python Package/Library
+newspaper,Python Package/Library
+opengraph,Python Package/Library
+python-goose,Python Package/Library
+python-readability,Python Package/Library
+sanitize,Python Package/Library
+sumy,Python Package/Library
+textract,Python Package/Library
+cola,Python Package/Library
+demiurge,Python Package/Library
+feedparser,Python Package/Library
+grab,Python Package/Library
+mechanicalsoup,Python Package/Library
+portia,Python Package/Library
+pyspider,Python Package/Library
+robobrowser,Python Package/Library
+scrapy,Framework/Library
+bottle,Framework/Library
+cherrypy,Framework/Library
+awesome-django,Framework/Library
+awesome-flask,Framework/Library
+awesome-pyramid,Framework/Library
+sanic,Python Package/Library
+tornado,Framework/Library
+turbogears,Python Package/Library
+web2py,Framework/Library
+github,Tool/Platform
+autobahnpython,Python Package/Library
+crossbar,Python Package/Library
+django-socketio,Framework/Library
+websocket-for-python,Python Package/Library
+javascript,Programming Language
+php,Programming Language
+c#,Programming Language
+c++,Programming Language
+ruby,Programming Language
+css,Python Package/Library
+c,Programming Language
+objective-c,Programming Language
+shell,Programming Language
+scala,Programming Language
+swift,Programming Language
+matlab,Programming Language
+clojure,Programming Language
+octave,Programming Language
+html,Python Package/Library
+js,Python Package/Library
+receivables,Python Package/Library
+payroll,Python Package/Library
+deposits,Python Package/Library
+documentation,Python Package/Library
+schedules,Python Package/Library
+benchmarking,Python Package/Library
+wireframing,Python Package/Library
+prototyping,Design/UI/UX
+quickbooks,Design/UI/UX
+quicken,Design/UI/UX
+erp,Python Package/Library
+spanish,Python Package/Library
+german,Python Package/Library
+rest,API/Integration
+soap,API/Integration
+json,Python Package/Library
+website,Python Package/Library
+ui,Design/UI/UX
+ux,Design/UI/UX
+design,Design/UI/UX
+crm,Python Package/Library
+cms,Python Package/Library
+coding,Python Package/Library
+windows,Python Package/Library
+servers,Python Package/Library
+unix,Python Package/Library
+linux,Design/UI/UX
+redhat,Python Package/Library
+solaris,Python Package/Library
+java,Programming Language
+perl,Programming Language
+vb script,Programming Language
+xml,Python Package/Library
+database,Python Package/Library
+oracle,Database
+microsoft sql,Database
+sql,Database
+powerpoint,Python Package/Library
+word,Python Package/Library
+excel,Python Package/Library
+visio,Python Package/Library
+adobe,Design/UI/UX
+photoshop,Design/UI/UX
+hadoop,Python Package/Library
+hbase,Database
+hive,Database
+zookeeper,Database
+openserver,Python Package/Library
+pl/sql,Database
+asp,Python Package/Library
+jsp,Python Package/Library
+reporting,Python Package/Library
+research,Python Package/Library
+analytical,Python Package/Library
+engineering,Python Package/Library
+policies,Python Package/Library
+budget,Python Package/Library
+health,Python Package/Library
+content,Python Package/Library
+brand,Python Package/Library
+safety,Python Package/Library
+certification,Python Package/Library
+seo,Python Package/Library
+digital marketing,Tool/Platform
+regulations,Python Package/Library
+legal,Python Package/Library
+engagement,Python Package/Library
+distribution,Python Package/Library
+coaching,Python Package/Library
+testing,Testing/QA
+vendors,Python Package/Library
+writing,Python Package/Library
+contracts,Python Package/Library
+inventory,Python Package/Library
+healthcare,Python Package/Library
+regulatory,Python Package/Library
+scheduling,Python Package/Library
+construction,Python Package/Library
+mobile,Python Package/Library
+correspondence,Python Package/Library
+controls,Python Package/Library
+specifications,Python Package/Library
+recruitment,Design/UI/UX
+partnership,Python Package/Library
+partnerships,Python Package/Library
+hardware,Python Package/Library
+programming,Python Package/Library
+agile,Python Package/Library
+advertising,Python Package/Library
+audit,Python Package/Library
+architecture,Python Package/Library
+governance,Python Package/Library
+staffing,Python Package/Library
+networking,Python Package/Library
+recruiting,Design/UI/UX
+sap,Python Package/Library
+troubleshooting,Python Package/Library
+electrical,Python Package/Library
+economics,Python Package/Library
+transportation,Python Package/Library
+automation,Python Package/Library
+lifecycle,Python Package/Library
+filing,Python Package/Library
+investigation,Python Package/Library
+editing,Python Package/Library
+purchasing,Python Package/Library
+kpis,Python Package/Library
+hospital,Python Package/Library
+forecasts,Python Package/Library
+acquisition,Design/UI/UX
+expenses,Python Package/Library
+billing,Python Package/Library
+workflow,Python Package/Library
+analyze,Python Package/Library
+process,Python Package/Library
+improvement,Python Package/Library
+pivot,Python Package/Library
+vlookups,Python Package/Library
+sharepoint,Python Package/Library
+access,Python Package/Library
+test case,Testing/QA
+jira,Python Package/Library
+tfs,Python Package/Library
+tableau,Python Package/Library
+jad,Python Package/Library
+solicitation,Python Package/Library
+kaban,Python Package/Library
+vue.js,Framework/Library
+sketch,Design/UI/UX
+indesign,Design/UI/UX
+illustrator,Design/UI/UX
+english,Python Package/Library
+french,Python Package/Library
+dns,Python Package/Library
+network design,Design/UI/UX
+administration,Python Package/Library
+video,Python Package/Library
+invoices,Python Package/Library
+payments,Python Package/Library
+lean,Python Package/Library
+installation,Python Package/Library
+transactions,Python Package/Library
+investigations,Python Package/Library
+protocols,Python Package/Library
+quality assurance,Testing/QA
+banking,Python Package/Library
+outreach,Python Package/Library
+sourcing,Python Package/Library
+merchandising,Python Package/Library
+r,Programming Language
+pharmaceutical,Python Package/Library
+fulfillment,Python Package/Library
+positioning,Python Package/Library
+tax,Python Package/Library
+investigate,Python Package/Library
+editorial,Python Package/Library
+electronics,Python Package/Library
+pr,Python Package/Library
+assembly,Python Package/Library
+facebook,Python Package/Library
+spreadsheets,Python Package/Library
+recruit,Design/UI/UX
+proposal,Python Package/Library
+hotel,Python Package/Library
+ordering,Python Package/Library
+branding,Python Package/Library
+researching,Python Package/Library
+chemistry,Python Package/Library
+saas,Python Package/Library
+cad,Python Package/Library
+mathematics,Python Package/Library
+customer-facing,Python Package/Library
+audio,Python Package/Library
+hospitality,Python Package/Library
+android,Python Package/Library
+licensing,Python Package/Library
+iso,Python Package/Library
+pmp,Python Package/Library
+quality control,Testing/QA
+reconciliation,Python Package/Library
+conversion,Python Package/Library
+ecommerce,Python Package/Library
+publishing,Python Package/Library
+supervising,Python Package/Library
+scrum,Python Package/Library
+sports,Python Package/Library
+e-commerce,Python Package/Library
+journalism,Python Package/Library
+user experience,Design/UI/UX
+cloud,Python Package/Library
+cisco,Python Package/Library
+regulatory requirements,Design/UI/UX
+itil,Python Package/Library
+aviation,Python Package/Library
+autocad,Python Package/Library
+acquisitions,Design/UI/UX
+tv,Python Package/Library
+instrumentation,Python Package/Library
+experiments,Python Package/Library
+build relationships,Design/UI/UX
+invoicing,Python Package/Library
+biology,Python Package/Library
+start-up,Python Package/Library
+workflows,Python Package/Library
+routing,Python Package/Library
+non-profit,Python Package/Library
+iphone,Python Package/Library
+architectures,Python Package/Library
+reconcile,Python Package/Library
+emea,Python Package/Library
+intranet,Python Package/Library
+sops,Python Package/Library
+sas,Python Package/Library
+digital media,Tool/Platform
+prospecting,Python Package/Library
+on-call,Python Package/Library
+tablets,Python Package/Library
+microsoft office suite,Design/UI/UX
+fitness,Python Package/Library
+rfp,Python Package/Library
+broadcast,Python Package/Library
+fabrication,Cloud/DevOps
+customer requirements,Design/UI/UX
+psychology,Python Package/Library
+physics,Python Package/Library
+mortgage,Python Package/Library
+analysis,Python Package/Library
+relationship building,Design/UI/UX
+sdlc,Python Package/Library
+on-boarding,Python Package/Library
+quality standards,Testing/QA
+aws,Cloud/DevOps
+kpi,Python Package/Library
+drafting,Python Package/Library
+admissions,Python Package/Library
+supervisory experience,Tool/Platform
+usability,Python Package/Library
+pharmacy,Python Package/Library
+commissioning,Python Package/Library
+fda,Python Package/Library
+test plans,Testing/QA
+variances,Python Package/Library
+financing,Python Package/Library
+counsel,Python Package/Library
+lighting,Python Package/Library
+outsourcing,Python Package/Library
+graphic design,Design/UI/UX
+transport,Python Package/Library
+.net,Python Package/Library
+startup,Python Package/Library
+matrix,Python Package/Library
+front-end,Python Package/Library
+hris,Python Package/Library
+instructional design,Design/UI/UX
+in-store,Python Package/Library
+api,API/Integration
+adobe creative suite,Design/UI/UX
+twitter,Python Package/Library
+hotels,Python Package/Library
+segmentation,Python Package/Library
+gis,Python Package/Library
+talent acquisition,Design/UI/UX
+photography,Python Package/Library
+ibm,Python Package/Library
+product quality,Testing/QA
+beverage,Python Package/Library
+underwriting,Python Package/Library
+cpr,Python Package/Library
+mining,Python Package/Library
+chemicals,Python Package/Library
+scripting,Python Package/Library
+migration,Python Package/Library
+mis,Python Package/Library
+therapeutic,Python Package/Library
+standardization,Python Package/Library
+retention,Python Package/Library
+spelling,Python Package/Library
+os,Python Package/Library
+immigration,Python Package/Library
+product design,Design/UI/UX
+etl,Python Package/Library
+peoplesoft,Python Package/Library
+benchmark,Python Package/Library
+quality management,Testing/QA
+apis,API/Integration
+test cases,Testing/QA
+telecom,Python Package/Library
+data quality,Testing/QA
+cfa,Python Package/Library
+co-op,Python Package/Library
+vmware,Python Package/Library
+datasets,Python Package/Library
+alliances,Python Package/Library
+solidworks,Python Package/Library
+prototype,Python Package/Library
+lan,Python Package/Library
+sci,Python Package/Library
+rfps,Python Package/Library
+flex,Python Package/Library
+gaap,Python Package/Library
+experimental,Python Package/Library
+cpg,Python Package/Library
+web services,API/Integration
+international,Python Package/Library
+travel,Python Package/Library
+sql server,Database
+affiliate,Python Package/Library
+business continuity,Design/UI/UX
+litigation,Python Package/Library
+ios,Python Package/Library
+html5,Python Package/Library
+real-time,Python Package/Library
+circuits,Design/UI/UX
+db2,Database
+reports,Python Package/Library
+wordpress,Python Package/Library
+yoast,Python Package/Library
+ghostwriting,Python Package/Library
+debugging,Python Package/Library
+security,Python Package/Library
+updates,Python Package/Library
+tci/ip,Python Package/Library
+dhcp,Python Package/Library
+wan/lan,Python Package/Library
+ubuntu,Python Package/Library
+cloud management,Cloud/DevOps
+math,Python Package/Library
+calculus,Python Package/Library
+mvp,Python Package/Library
+rest api,API/Integration
+accountability,Soft Skill
+teamwork,Soft Skill
+learning agility,Soft Skill
+adaptability,Soft Skill
+time management,Soft Skill
+customer focus,Soft Skill
+problem solving,Soft Skill
+communication,Soft Skill
+critical thinking,Soft Skill
+creativity,Soft Skill
+self-motivation,Soft Skill
+attention to detail,Soft Skill
+leadership,Soft Skill
+conflict resolution,Soft Skill
+presentation skills,Soft Skill
+data analysis, technical skill
