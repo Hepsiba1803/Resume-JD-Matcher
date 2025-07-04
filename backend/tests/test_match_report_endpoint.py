@@ -41,4 +41,4 @@ def test_match_files_endpoint_pdf_docx():
     # You can even check for the keywords you put in the files
     assert "python" in json_data["resume_keywords"]
     assert "python" in json_data["jd_keywords"]
-    assert "developer" in json_data["jd_keywords"]
+    assert "aws" in json_data["jd_keywords"]

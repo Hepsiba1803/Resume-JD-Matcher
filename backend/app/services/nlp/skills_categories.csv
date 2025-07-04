@@ -1,0 +1,102 @@
+skill,category
+agile,methodology
+angular,framework/library
+apache airflow,workflow orchestration
+apache kafka,big data framework
+apache spark,big data framework
+aws,cloud platform
+aws,cloud/devops
+aws emr,cloud service
+aws glue,cloud service
+aws redshift,cloud service
+azure,cloud/devops
+azure data lake storage,cloud service
+batch data processing,data engineering
+c#,programming language
+c++,programming language
+cassandra,nosql database
+ci/cd,devops/tooling
+ci/cd,tool/platform
+collaboration,soft skill
+communication,soft skill
+containerization,devops/tooling
+css,programming language
+data analysis,techinal skill
+data governance,data management
+data integration,data engineering
+data lake,data engineering
+data modeling,data engineering
+data quality management,data quality
+data security,cybersecurity
+data validation,data quality
+data visualization,software engineering
+data warehousing,data engineering
+distributed systems,data engineering
+django,framework/library
+docker,containerization
+docker,tool/platform
+dynamodb,nosql database
+elt,data engineering
+etl,data engineering
+express,framework/library
+flask,framework/library
+gcp,cloud/devops
+gcp,cloud platform
+gcp bigquery,cloud service
+git,tool/platform
+git,version control
+github,tool/platform
+go,programming language
+graphql,api/integration
+hadoop,big data framework
+html,programming language
+java,programming language
+javascript,programming language
+jenkins,tool/platform
+jira,tool/platform
+junit,testing/qa
+kubernetes,containerization
+kubernetes,tool/platform
+leadership,soft skill
+less,programming language
+linux,operating system
+luigi,workflow orchestration
+matplotlib,framework/library
+mongodb,database
+mongodb,nosql database
+mysql,database
+node.js,framework/library
+numpy,framework/library
+oracle,database
+pandas,framework/library
+php,programming language
+postgresql,database
+power bi,data visualization tool
+problem solving,soft skill
+pytest,testing tool
+python,programming language
+pytorch,framework/library
+react,framework/library
+redis,database
+rest api,api/integration
+rest api development,technical skill
+ruby,programming language
+sass,programming language
+scala,programming language
+scikit-learn,framework/library
+scrum,agile framework
+seaborn,data visualization tool
+selenium,testing tool
+spring,framework/library
+sql,query language
+sql server,database
+sqlite,database
+streaming data processing,data engineering
+swift,programming language
+tableau,data visualization tool
+teamwork,soft skill
+tensorflow,framework/library
+typescript,programming language
+unit testing,testing concept
+unix,operating system
+vue.js,framework/library
