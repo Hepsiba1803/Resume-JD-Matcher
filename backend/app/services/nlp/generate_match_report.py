@@ -1,4 +1,4 @@
-from .keyword_extraction import extract_keywords
+from .context_keyword_extraction import extract_relevant_skills_and_keywords
 from .match_score import match_score
  
 def match_report(job_description: str, resume_text: str) -> dict:
@@ -13,9 +13,10 @@ def match_report(job_description: str, resume_text: str) -> dict:
         dict: A dictionary containing the match score and keywords.
     """
     # Extract keywords from both job description and resume
-    jd_keywords = extract_keywords(job_description)
-    resume_keywords =extract_keywords(resume_text)
-    jd_keywords_str= " ".join(jd_keywords)
+    jd_keywords = extract_relevant_skills_and_keywords(job_description)
+    resume_keywords =extract_relevant_skills_and_keywords(resume_text)
+    suggested_keywords= jd_keywords - resume_keywords
+    jd_keywords_str= " ".join(jd_keywords) 
     resume_keywords_str =" ".join(resume_keywords)
     # calculate match score
     match_score_value = match_score(job_description, resume_text)
