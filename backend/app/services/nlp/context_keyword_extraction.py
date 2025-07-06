@@ -64,7 +64,7 @@ def prompt_user_about_missing_skills(missing_keywords, csv_path):
                      print(f"skipping {skill}, not a valid skill/keyword")
         
                     
-csv_path = "backend/app/services/nlp/skills_categories.csv"
+csv_path = "backend/app/services/nlp/dataset.csv"
 
 def load_skill_set(csv_path):
     with open(csv_path, encoding="utf-8") as f:
@@ -73,7 +73,7 @@ def load_skill_set(csv_path):
         skills = set(row[0].strip().lower() for row in reader if row and row[0].strip())
     return skills
 
-SKILL_SET = load_skill_set("backend/app/services/nlp/skills_categories.csv")
+SKILL_SET = load_skill_set(csv_path)
 
 
 def extract_relevant_skills_and_keywords(text, top_n=500) -> set[str]:
@@ -116,5 +116,24 @@ def extract_relevant_skills_and_keywords(text, top_n=500) -> set[str]:
      if False:
         prompt_user_about_missing_skills(missing_keywords, csv_path)
      return all_keywords
+
+def load_skill_set_to_dict(csv_path) -> dict:
+     """
+        Loads the skills set from a CSV file into a dictionary.
+        Args:
+            csv_path(str) : Path to the CSV file containing skills and their categories.
+        Returns:
+            dict: A dictionary where keys are skills and values are their categories.
+    """
+     with open(csv_path, 'r', encoding="utf-8") as f_csv:
+        reader = csv.DictReader(f_csv)
+        dict_skill_set = {}
+        # Read each row and populate the dictionary
+        for row in reader:
+            skill = row['skill'].strip().lower()
+            category = row['category'].strip().lower()
+            dict_skill_set[skill] = category
+        return dict_skill_set
+
 
     
