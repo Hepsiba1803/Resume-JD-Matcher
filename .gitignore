@@ -3,10 +3,14 @@ venv/
 __pycache__/
 .pytest_cache/
 *.pyc
-
+*.pyo
+*.pyd
 # Environment variables
 .env
 
 # IDE and OS files
 .vscode/
 .DS_Store
+
+
+
