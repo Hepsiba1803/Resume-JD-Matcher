@@ -22,7 +22,8 @@ CATEGORY_TEMPLATES = {
         "Consider adding your experience with '{skill}' if relevant to the job requirements."
     )
 }
-csv_path = "backend/app/services/nlp/dataset.csv"
+csv_path = "app/services/nlp/dataset.csv"
+
 category_dictionary = load_skill_set_to_dict(csv_path)
 
 def get_category_for_skill(skill: str) -> str:

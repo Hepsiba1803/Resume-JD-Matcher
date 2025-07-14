@@ -5,9 +5,9 @@ from fastapi.testclient import TestClient
 import os
 
 # Adjust import according to your project structure
-from backend.app.main import app
+from backend.app.main import web_app
 
-client = TestClient(app)
+client = TestClient(web_app)
 
 # Define paths to your NEW dummy files
 TESTS_DIR = os.path.dirname(__file__)

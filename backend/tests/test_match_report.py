@@ -4,16 +4,9 @@ import unittest
 from unittest.mock import patch
 
 # Adjust import according to your project structure
-try:
-    from app.services.nlp.keyword_extraction import extract_keywords
-    from app.services.nlp.match_score import match_score 
-    from app.services.nlp.generate_match_report import match_report
-except ImportError:
-    # If you run tests from a different location, you may need to adjust the import path
-    # For example, if running from the project root with PYTHONPATH set:
-   from backend.app.services.nlp.keyword_extraction import extract_keywords
-   from backend.app.services.nlp.match_score import match_score 
-   from backend.app.services.nlp.generate_match_report import match_report
+from app.services.nlp.keyword_extraction import extract_keywords  # type: ignore # Ensure this path is correct, or use: from app.services.nlp.keyword_extraction import extract_keywords
+from app.services.nlp.match_score import match_score  # type: ignore
+from app.services.nlp.generate_match_report import match_report # type: ignore
 class TestNLPFunctions(unittest.TestCase):
 
     def test_extract_keywords_basic(self):
@@ -52,5 +45,5 @@ class TestNLPFunctions(unittest.TestCase):
         self.assertIsInstance(result['resume_keywords'], list)
         self.assertIsInstance(result['jd_keywords'], list)
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     unittest.main()
