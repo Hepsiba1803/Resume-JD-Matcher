@@ -5,6 +5,8 @@ import csv
 
 nlp = spacy.load('en_core_web_sm')
 kw_model = KeyBERT('all-MiniLM-L6-v2')
+csv_path = "app/services/nlp/dataset.csv"
+
 
 def filter_missing_keywords(missing_keywords, text) -> set[str]:
      """ 
@@ -64,7 +66,6 @@ def prompt_user_about_missing_skills(missing_keywords, csv_path):
                      print(f"skipping {skill}, not a valid skill/keyword")
         
                     
-csv_path = "backend/app/services/nlp/dataset.csv"
 
 def load_skill_set(csv_path):
     with open(csv_path, encoding="utf-8") as f:

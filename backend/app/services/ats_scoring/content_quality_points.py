@@ -1,6 +1,5 @@
 import re
-
-def content_quality_score(resume_text: str, max_points=15):
+def content_quality_score_and_suggestions(resume_text: str, max_points=15):
     """
     Scores the content quality of a resume based on quantified achievements,
     action verbs, spelling, and placeholder text.
@@ -19,7 +18,7 @@ def content_quality_score(resume_text: str, max_points=15):
     quantified = re.findall(r'\b\d+(\.\d+)?(%|\$|k|K|m|M)?\b', resume_text)
     if not quantified:
         deductions += 5
-        feedback.append("Add quantified achievements (e.g., numbers, percentages, or metrics) to strengthen your resume.")
+        feedback.append("Add metrics. Numbers, percentages, and data help quantify your impact.")
 
     # 2. Check for action verbs (at least a few)
     action_verbs = [
@@ -30,24 +29,22 @@ def content_quality_score(resume_text: str, max_points=15):
     action_verbs_found = [verb for verb in action_verbs if re.search(rf'\b{verb}\b', resume_text, re.IGNORECASE)]
     if len(action_verbs_found) < 3:
         deductions += 4
-        feedback.append("Use more action verbs (e.g., led, developed, achieved) to describe your experience.")
+        feedback.append("Use strong action verbs like 'led', 'developed', or 'delivered' to convey ownership.")
 
     # 3. Check for placeholder text
     if re.search(r'lorem ipsum|dummy text|your name here', resume_text, re.IGNORECASE):
         deductions += 3
-        feedback.append("Remove placeholder text like 'lorem ipsum' or 'your name here'.")
+        feedback.append("Remove any placeholder content—make sure everything speaks to your real experience.")
 
-    # 4. Basic spell check (very basic, for MVP)
-    # Here we'll just flag if there are many words with no vowels (a crude check)
+    # 4. Basic spell check (very basic)
     words = resume_text.split()
     suspicious_words = [w for w in words if len(w) > 4 and not re.search(r'[aeiouAEIOU]', w)]
     if len(suspicious_words) > 10:
         deductions += 2
-        feedback.append("Check for possible spelling mistakes or typos.")
+        feedback.append("Review for possible spelling mistakes or typos. A quick proofread can go a long way.")
 
     score = max(max_points - deductions, 0)
     if not feedback:
-        feedback.append("Your resume content is clear, quantified, and action-oriented!")
+        feedback.append("Nicely done! Your resume content is clear, focused, and results-driven.")
 
     return score, feedback
-

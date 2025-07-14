@@ -41,5 +41,7 @@ def section_completion(resume_text: str):
         f"Consider adding a '{section}' section to your resume to enhance its completeness."
         for section in missing_sections
     ]
+    if not missing_sections:
+        suggestions.append("Great job! Your resume includes all the standard sections.")
 
     return section_score, suggestions

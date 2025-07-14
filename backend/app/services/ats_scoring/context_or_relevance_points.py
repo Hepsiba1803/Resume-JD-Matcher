@@ -76,7 +76,7 @@ def keyword_context_points(sections: dict, jd_keywords: list, max_points=10) -> 
     # Feedback
     feedback = []
     if missing:
-        feedback.append(f"Missing important keywords: {', '.join(sorted(missing))}. Consider adding them to your experience or projects.")
+        feedback.append(f"Missing important keywords: {', '.join(sorted(missing))}. Consider adding them to resume sections.")
     if found_in_skills:
         feedback.append(f"Some skills ({', '.join(sorted(found_in_skills))}) are only listed in Skills. Add them to Experience/Projects for more impact.")
     if found_in_context:
@@ -85,25 +85,3 @@ def keyword_context_points(sections: dict, jd_keywords: list, max_points=10) -> 
         feedback.append("No relevant skills from the job description found. Tailor your resume more closely to the JD.")
     return score, feedback
 
-if __name__ == "__main__":
-    # Example sections dictionary
-    sections = {
-        "profile": "Motivated software engineer with a passion for AI.",
-        "experience": "Developed REST APIs in Python and deployed with Docker. Used pandas and scikit-learn.",
-        "projects": "Built a chatbot using Python and TensorFlow.",
-        "skills": "Python, Docker, REST, SQL, Machine Learning, TensorFlow",
-        "education": "B.Tech in Computer Science, XYZ University"
-    }
-
-    # Example job description keywords
-    jd_keywords = [
-        "Python", "Docker", "REST", "SQL", "Machine Learning",
-        "scikit-learn", "pandas", "TensorFlow", "AWS"
-    ]
-
-    score, feedback = keyword_context_points(sections, jd_keywords, max_points=10)
-
-    print("Context & Relevance Score:", score)
-    print("Feedback:")
-    for f in feedback:
-        print("-", f)

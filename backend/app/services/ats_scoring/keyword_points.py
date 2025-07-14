@@ -1,7 +1,7 @@
-from app.services.nlp.context_keyword_extraction import extract_relevant_skills_and_keywords
-from backend.app.services.create_suggestions import create_suggestion
+from ...services.nlp.context_keyword_extraction import extract_relevant_skills_and_keywords
+from ...services.create_suggestions import create_suggestion
 
-def computer_keyword_score_and_suggestions(job_description: str, resume_text: str) -> tuple:
+def compute_keyword_score_and_suggestions(job_description: str, resume_text: str) -> tuple:
     """
     Find matching keywords and calculate a score based on the number of matches.
     Find missing keywords and provide suggestions for improvement.
