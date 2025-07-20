@@ -1,78 +1,130 @@
-Project Goal:
-Build a tool that helps job seekers and recruiters quickly compare resumes and job descriptions to highlight matches and gaps.
+# 🚀 Resume-JD Matcher
 
-Stakeholders:
-
-Yourself (developer, product owner)
-
-Future collaborators or open-source contributors
-
-End users (job seekers, recruiters)
-
-Vision Statement:
-Create an intuitive, collaborative-ready platform that streamlines resume and job description matching, designed with best practices for team development and future scalability.
-# Resume-JD Matcher
-
-A collaborative-ready, open-source tool to help job seekers and recruiters compare resumes with job descriptions, highlighting matches and gaps. Built to simulate modern Applicant Tracking System (ATS) workflows, this project is perfect for learning both solo and team-based software development.
-
-## 🚀 Features
-
-- Upload and parse resume and job description files
-- Automatic keyword extraction and similarity scoring
-- Highlights matching and missing keywords
-- ATS-friendly analysis and suggestions for improvement
-- Modular, extensible codebase designed for collaboration
-
-## 📚 How It Works
-
-1. **Upload** your resume and target job description.
-2. The system **parses** both documents, extracting key skills and terms.
-3. **Keyword matching** and **semantic similarity** algorithms compare your resume to the job description.
-4. Get an **analysis report** showing:
-   - Overlapping keywords and skills
-   - Missing important terms
-   - Suggestions to improve your resume for ATS systems
-
-## Minimum Viable Product (MVP) Features
-
-- Resume and JD File Upload: Users can upload their resume and a job description (PDF, DOCX, or TXT).
-- Text Extraction: The system extracts text from both files for analysis.
-- Keyword Extraction: Automatic identification of key skills and terms from both documents.
-- Similarity Scoring: Calculates and displays a similarity score based on keyword overlap and relevance.
-- Results Display: Highlights matching and missing keywords, and provides a summary report.
-- Basic User Interface: Simple web interface for file upload and results visualization.
-
-## Project Structure
-
-- `/backend` — Backend code and backend-specific documentation ([backendplan.md](./backend/backendplan.md))
-- `/frontend` — Frontend code (user interface)
-- `/docs` — Documentation and planning materials
-- `requirements.txt`- For all dependencies of project
-  
-
-
-
-
-## 🛠️ Getting Started
-
-1. **Clone the repository:**
-2. **Install dependencies:**  
-*(Add later)*
-3. **Run the application:**  
-*(Add run instructions here, e.g., `python app.py` or `streamlit run app.py`)*
-
-## 🧑‍💻 For Contributors
-
-- This project is structured for team collaboration:
-- Feature branches and pull requests are encouraged
-- All major decisions are logged in `DECISIONS.md`
-- Issues and project board are used for task tracking
-- New contributors: See `CONTRIBUTING.md` (add this file if you want to expand in the future)
-
-## 📄 License
-
-MIT
+An open-source, collaborative-ready platform that helps job seekers and recruiters **quickly compare resumes and job descriptions**, highlighting keyword matches and gaps. The tool is designed for both learning and team-style software development, and simulates modern **Applicant Tracking System (ATS)** workflows.
 
 ---
 
-*Inspired by open-source ATS tools and resume matchers. Built for learning, collaboration, and practical job search support.*  
+## 🎯 Project Goal
+
+Enable job seekers to tailor their resumes effectively and help recruiters instantly screen candidates by:
+- Extracting and comparing key skills, experiences, and requirements.
+- Visualizing overlap, missing terms, and ATS-friendliness in an interactive report.
+
+---
+
+## 👥 Stakeholders & Vision
+
+- **Primary:** Developers, job seekers, recruiters  
+- **Future:** Open-source contributors and collaborators  
+
+**Vision:**  
+Create an intuitive, modular, and scalable platform for resume-JD matching that promotes team best practices and practical job search support.
+
+---
+
+## ✨ Features
+
+- **File Upload:** Resume & job description (PDF, DOCX, TXT)  
+- **Text Extraction:** Automatic parsing to extract core text from files  
+- **Keyword Extraction:** NLP-based identification of essential skills and phrases  
+- **Similarity Scoring:** Smart scoring based on keyword overlap and relevance  
+- **Results Visualization:** Clear highlighting of matches, gaps, and strengths  
+- **ATS Analysis:** Checks for ATS-relevant features and offers suggestions  
+- **Extensible Codebase:** Modular design, easy to expand or contribute  
+
+---
+
+## 💡 How It Works
+
+1. **Upload** your resume and the target job description using the simple UI.  
+2. **Parsing & Extraction:** The backend extracts and cleanses text from both files.  
+3. **Keyword Matching:** NLP and similarity algorithms match skills, experiences, and terms.  
+4. **Actionable Report:** See overlapping keywords, missing important terms, and tips for ATS optimization.  
+
+---
+
+## 🏗️ Project Structure
+
+```
+Resume-JD-Matcher/
+│
+├── backend/        # Backend code & API (see backendplan.md)
+├── frontend/       # Frontend code (UI, file uploads, visualization)
+├── docs/           # Planning, user docs, architecture materials
+├── requirements.txt# Python dependencies (backend)
+├── DECISIONS.md    # Technical and design decisions
+└── README.md       # This file
+```
+
+---
+
+## 🔧 Getting Started
+
+**1. Clone the repository:**
+```
+git clone https://github.com/Hepsiba1803/Resume-JD-Matcher.git
+cd Resume-JD-Matcher
+```
+
+**2. Install backend dependencies:**
+```
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**3. (Frontend):**
+Navigate to `frontend/` and follow the setup instructions:
+
+```
+cd frontend
+npm install
+npm start
+```
+
+**4. Run the application:**
+- For backend:  
+  ```
+  python app.py
+  ```
+  Or  
+  ```
+  streamlit run app.py
+  ```
+
+---
+
+## 🤝 For Contributors
+
+- Use **feature branches** and open descriptive pull requests.  
+- Major decisions belong in `DECISIONS.md`.  
+- Track progress in issues/project board.  
+- Create or refer to `CONTRIBUTING.md` for detailed guidelines.  
+
+---
+
+## 📅 Development Timeline
+
+| Phase                    | Dates           |
+|--------------------------|-----------------|
+| Planning & Setup         | June 16–17      |
+| Backend Development      | June 18–20      |
+| NLP Engine               | June 21–23      |
+| Frontend MVP             | June 24–25      |
+| ATS & Feedback Module    | June 26         |
+| Testing, Docs, Deploy    | June 27–28      |
+| Final QA & Demo          | June 28-30      |
+| Extra Features & Polish  | July  05        |
+
+---
+
+## 📝 License
+
+MIT License – feel free to fork, use, and contribute.
+
+---
+
+*Inspired by real-world hiring workflows and resume parsing systems. Built with ❤️ by [Hepsiba1803](https://github.com/Hepsiba1803).*
+
+```
+
