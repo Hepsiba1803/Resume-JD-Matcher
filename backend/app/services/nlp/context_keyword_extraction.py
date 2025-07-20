@@ -8,64 +8,6 @@ kw_model = KeyBERT('all-MiniLM-L6-v2')
 csv_path = "app/services/nlp/dataset.csv"
 
 
-def filter_missing_keywords(missing_keywords, text) -> set[str]:
-     """ 
-        Checks for noun phrases in the text that are present in missing keywords.
-
-        Args:
-            missing_keywords(set) : set of keywords not found in the skills set.
-            text (str): The input text to extract noun phrases from.
-
-            Returns:
-             set[str]: A set of noun phrases that are present in the missing keywords.
-     """
-     
-     doc = nlp(text)
-     # Extract noun phrases from the text
-     noun_phrases=set(chunk.text.lower().strip() for chunk in doc.noun_chunks)
-     # Filter noun phrases that are in the missing keywords
-     filtered_phrases = set(phrase for phrase in noun_phrases if phrase in missing_keywords)
-     return filtered_phrases
-
-
-    
-
-def prompt_user_about_missing_skills(missing_keywords, csv_path):
-    """
-    Prompts the user to add missing keywords to the skills CSV file.
-
-    Args:
-        missing_keywords (set): Set of keywords not found in the skills set.
-        csv_path (str): Path to the skills CSV file.
-    """
-    with open(csv_path, encoding="utf-8") as f:
-        reader =csv.reader(f)
-        next(reader)
-        existing_skills=set(row[0].strip().lower() for row in reader if row and row[0].strip())
-    if not missing_keywords:
-        print("No missing keywords to add")
-        return
-    else:
-        print("This is a simple functionality to improve our data set with new keywords")
-        print(f"found {len(missing_keywords)} new keywords")
-        for skill in missing_keywords:
-            print(f"New Candidate skill/keyword: {skill}")
-            if skill in existing_skills:
-                        print(f"{skill} already exists in the dataset, skipping addition.")
-                        continue
-            else:
-                response = input("please confirm this a valid skill/keyword: (yes/no):").strip().lower()
-                if response == "yes":
-                     category=input(f"Enter the category for {skill} (e.g., 'Programming Language', 'tool', 'technical skill', etc.)")
-                     with open(csv_path, 'a', encoding="utf-8") as f:
-                          writer = csv.writer(f)
-                          writer.writerow([skill, category])
-                          print(f"Added {skill} to the skills set under category {category}")
-                          print("Thank you for helping us improve our skills set")
-                else:
-                     print(f"skipping {skill}, not a valid skill/keyword")
-        
-                    
 
 def load_skill_set(csv_path):
     with open(csv_path, encoding="utf-8") as f:
@@ -114,8 +56,7 @@ def extract_relevant_skills_and_keywords(text, top_n=500) -> set[str]:
      print("count:", len(all_keywords))
      #filtered_phrases = filter_missing_keywords(missing_keywords, text)
      # Prompt user to add missing keywords
-     if False:
-        prompt_user_about_missing_skills(missing_keywords, csv_path)
+     
      return all_keywords
 
 def load_skill_set_to_dict(csv_path) -> dict:

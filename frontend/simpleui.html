@@ -1,116 +1,37 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Resume-JD Matcher</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 2em; }
-    #results { margin-top: 2em; }
-    .score-card {
-      border: 1px solid #ccc;
-      padding: 1em;
-      margin-bottom: 1em;
-      border-radius: 6px;
-      background: #f9f9f9;
-    }
-    .score-type {
-      font-weight: bold;
-      font-size: 1.1em;
-      color: #333;
-    }
-    .score-value {
-      color: #006400;
-    }
-    .suggestions {
-      margin-top: 0.5em;
-      color: #555;
-    }
-    .loading {
-      color: #0074d9;
-    }
-    .error {
-      color: #c00;
-    }
-    ul {
-      margin: 0.5em 0 0 1em;
-    }
-    li {
-      margin-bottom: 0.3em;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>ATS Resume Matcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Resume-JD Matcher</h1>
-  <form id="uploadForm">
-    <label>Resume: <input type="file" id="resumeFile" required></label><br><br>
-    <label>Job Description: <input type="file" id="jdFile" required></label><br><br>
-    <button type="submit">Upload and Match</button>
-  </form>
+  <h1>🎯 Resume-JD Matcher</h1>
+
+  <!-- Upload Form -->
+  <div class="card upload-card">
+    <form id="uploadForm">
+      <label>Resume:
+        <input type="file" id="resumeFile" required />
+      </label>
+      <label>Job Description:
+        <input type="file" id="jdFile" required />
+      </label>
+      <button type="submit">Analyze Match</button>
+    </form>
+  </div>
+
+  <!-- Upload status -->
   <div id="status"></div>
-  <div id="results"></div>
 
-  <script>
-    function showResults(results) {
-      const container = document.getElementById('results');
-      container.innerHTML = '';
+  <!-- Summary panel -->
+  <div id="summary-panel" class="card hidden"></div>
 
-      results.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'score-card';
+  <!-- Results -->
+  <div id="results" class="results-grid"></div>
 
-        // Format suggestions as bullet points if it's an array
-        let suggestionHTML = '';
-        if (Array.isArray(item.suggestions)) {
-          suggestionHTML = '<ul>' + item.suggestions.map(s => `<li>${s}</li>`).join('') + '</ul>';
-        } else {
-          suggestionHTML = `<p>${item.suggestions}</p>`;
-        }
-
-        card.innerHTML = `
-          <div class="score-type">${item.type}</div>
-          <div>Score: <span class="score-value">${item.score}</span></div>
-          <div class="suggestions"><strong>Suggestions:</strong> ${suggestionHTML}</div>
-        `;
-
-        container.appendChild(card);
-      });
-    }
-
-    document.getElementById('uploadForm').onsubmit = async function(e) {
-      e.preventDefault();
-      document.getElementById('results').innerHTML = '';
-      document.getElementById('status').innerHTML = '<span class="loading">Uploading and processing...</span>';
-
-      const resumeFile = document.getElementById('resumeFile').files[0];
-      const jdFile = document.getElementById('jdFile').files[0];
-
-      if (!resumeFile || !jdFile) {
-        document.getElementById('status').innerHTML = '<span class="error">Please select both files.</span>';
-        return;
-      }
-
-      const formData = new FormData();
-      formData.append('resume', resumeFile);
-      formData.append('job_description', jdFile);
-
-      try {
-        const response = await fetch('http://localhost:8000/api/match-files', {
-          method: 'POST',
-          body: formData
-        });
-
-        if (!response.ok) {
-          throw new Error('Server error: ' + response.statusText);
-        }
-
-        const data = await response.json();
-        const resultsArray = Array.isArray(data) ? data : Object.values(data);
-
-        showResults(resultsArray);
-        document.getElementById('status').innerHTML = '<span class="loading">Done!</span>';
-      } catch (err) {
-        document.getElementById('status').innerHTML = '<span class="error">Error: ' + err.message + '</span>';
-      }
-    };
-  </script>
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>

@@ -96,7 +96,6 @@ backend/
 
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [spaCy Documentation](https://spacy.io/usage)
-- [PyPDF2 Documentation](https://pypdf2.readthedocs.io/en/latest/)
 - [python-docx Documentation](https://python-docx.readthedocs.io/en/latest/)
 - [scikit-learn Documentation](https://scikit-learn.org/stable/)
 

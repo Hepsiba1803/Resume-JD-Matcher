@@ -29,7 +29,7 @@ async def create_match_analysis(
 
 
     # keyword matching score and suggestions
-    keyword_score,keyword_feedback=keyword_points.compute_keyword_score_and_suggestions(jd_text, resume_text)
+    keyword_score,missing_keywords,keyword_feedback=keyword_points.compute_keyword_score_and_suggestions(jd_text, resume_text)
 
     # standard section score and feedback 
     section_score, section_feedback=section_points.section_completion(resume_text)
@@ -57,6 +57,7 @@ async def create_match_analysis(
         { 
             "type":"keyword match",
             "score": keyword_score,
+            "missing_keywords": missing_keywords,
             "suggestions": keyword_feedback
         },
         { 
