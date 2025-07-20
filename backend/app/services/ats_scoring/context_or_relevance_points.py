@@ -75,8 +75,6 @@ def keyword_context_points(sections: dict, jd_keywords: list, max_points=10) -> 
 
     # Feedback
     feedback = []
-    if missing:
-        feedback.append(f"Missing important keywords: {', '.join(sorted(missing))}. Consider adding them to resume sections.")
     if found_in_skills:
         feedback.append(f"Some skills ({', '.join(sorted(found_in_skills))}) are only listed in Skills. Add them to Experience/Projects for more impact.")
     if found_in_context:

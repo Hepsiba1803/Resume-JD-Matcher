@@ -61,21 +61,21 @@ def formatting_score_and_suggestions(resume: UploadFile) -> tuple:
 
             if fonts_found - STANDARD_FONTS:
                 deductions += 5
-                feedback.append("• Stick to system-standard fonts like Arial, Calibri, or Times New Roman—ATS systems are tuned to read them reliably.")
+                feedback.append("Stick to system-standard fonts like Arial, Calibri, or Times New Roman—ATS systems are tuned to read them reliably.")
 
             if any(page.extract_tables() for page in pdf.pages):
                 deductions += 5
-                feedback.append("• Reconsider using tables. They often confuse ATS systems and mess with your resume’s readability.")
+                feedback.append("Reconsider using tables. They often confuse ATS systems and mess with your resume’s readability.")
 
             if any(page.images for page in pdf.pages):
                 deductions += 5
-                feedback.append("• Ditch the images—ATS doesn’t see them, and they can interfere with parsing your text.")
+                feedback.append("Ditch the images—ATS doesn’t see them, and they can interfere with parsing your text.")
 
             if long_paragraphs:
-                feedback.append("• Break down those long paragraphs into bullet points. It’ll boost readability and help recruiters scan faster.")
+                feedback.append("Break down those long paragraphs into bullet points. It’ll boost readability and help recruiters scan faster.")
 
             if date_format_issues:
-                feedback.append("• Stick to one clear format for dates like 'Jan 2020 – Mar 2022'. ATS and human eyes both appreciate the consistency.")
+                feedback.append("Stick to one clear format for dates like 'Jan 2020 – Mar 2022'. ATS and human eyes both appreciate the consistency.")
 
     # ----------- DOCX HANDLING -----------
     elif resume.content_type == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' or resume_name.lower().endswith('.docx'):
@@ -115,21 +115,21 @@ def formatting_score_and_suggestions(resume: UploadFile) -> tuple:
 
         if fonts_found - STANDARD_FONTS:
             deductions += 5
-            feedback.append("• Stick to system-default fonts—Arial, Calibri, Times New Roman. Anything else risks rendering issues in ATS.")
+            feedback.append("Stick to system-default fonts—Arial, Calibri, Times New Roman. Anything else risks rendering issues in ATS.")
 
         if doc.tables:
             deductions += 5
-            feedback.append("• Tables might seem neat, but they often mess up parsing. Flatten content into plain text where possible.")
+            feedback.append("Tables might seem neat, but they often mess up parsing. Flatten content into plain text where possible.")
 
         if hasattr(doc, 'inline_shapes') and doc.inline_shapes:
             deductions += 5
-            feedback.append("• Avoid putting in pictures or graphics. ATS won’t read them, and they might block vital info.")
+            feedback.append("Avoid putting in pictures or graphics. ATS won’t read them, and they might block vital info.")
 
         if long_paragraphs:
-            feedback.append("• Break long chunks of text into digestible lines or bullet points—it’s easier on the reader and better for ATS too.")
+            feedback.append("Break long chunks of text into digestible lines or bullet points—it’s easier on the reader and better for ATS too.")
 
         if date_format_issues:
-            feedback.append("• Unify your date style. Something like 'Jan 2020 – Mar 2022' reads clean and looks polished.")
+            feedback.append("Unify your date style. Something like 'Jan 2020 – Mar 2022' reads clean and looks polished.")
 
         try:
             for section in doc.sections:
