@@ -11,3 +11,6 @@ spacy==3.8.4
 scikit-learn==1.7.0
 keybert=0.9.0
 
+# Testing & Utilities
+pytest==8.2.0
+python-dotenv==1.1.0
