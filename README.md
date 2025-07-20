@@ -85,11 +85,8 @@ npm start
 **4. Run the application:**
 - For backend:  
   ```
-  python app.py
-  ```
-  Or  
-  ```
-  streamlit run app.py
+  python main.py
+
   ```
 
 ---
