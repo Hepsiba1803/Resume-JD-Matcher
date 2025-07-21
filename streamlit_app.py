@@ -10,6 +10,17 @@ from backend.app.services.ats_scoring import (
     context_or_relevance_points,
     section_points
 )
+import spacy
+import subprocess
+
+def load_spacy_model():
+    try:
+        return spacy.load("en_core_web_sm")
+    except OSError:
+        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+        return spacy.load("en_core_web_sm")
+
+nlp = load_spacy_model()
 
 
 def run_analysis(resume_file, jd_file):
