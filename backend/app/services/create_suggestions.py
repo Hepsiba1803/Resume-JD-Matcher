@@ -1,4 +1,7 @@
 from .nlp.context_keyword_extraction import load_skill_set_to_dict
+import os
+
+
 CATEGORY_TEMPLATES = {
     "programming language": (
         "Highlight your proficiency in '{skill}', including relevant projects, coursework, or certifications."
@@ -22,7 +25,11 @@ CATEGORY_TEMPLATES = {
         "Consider adding your experience with '{skill}' if relevant to the job requirements."
     )
 }
-csv_path = "app/services/nlp/dataset.csv"
+
+
+csv_path = os.path.join(os.path.dirname(__file__), "nlp", "dataset.csv")
+
+
 
 category_dictionary = load_skill_set_to_dict(csv_path)
 
