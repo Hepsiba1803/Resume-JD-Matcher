@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from .routes import match_report
 from fastapi.middleware.cors import CORSMiddleware
 
+print("Starting the Resume-JD Matcher API...")
 web_app = FastAPI(
     title="Resume-JD Matcher API",
     version="1.0.0"
