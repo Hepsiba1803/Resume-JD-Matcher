@@ -1,17 +1,22 @@
--e "\n.vscode/\n.venv/\nvenv/\n.pytest_cache/\n__pycache__/\n*.pyc" 
-
-# 💡 Python compiled files
+# Python compiled files
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# 📦 pytest cache
+# Pytest
 .pytest_cache/
 
-# ⚙️ VS Code editor config
+# VS Code workspace settings
 .vscode/
 
-# 💻 virtual environments
+# Python virtual environments
 venv/
 .venv/
 env/
 
+# Environment variables
+.env
+
+# macOS junk files
+.DS_Store

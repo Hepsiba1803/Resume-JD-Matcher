@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ATS Resume Matcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎯 Resume-JD Matcher</h1>
+
+  <!-- Upload Form -->
+  <div class="card upload-card">
+    <form id="uploadForm">
+      <label>Resume:
+        <input type="file" id="resumeFile" required />
+      </label>
+      <label>Job Description:
+        <input type="file" id="jdFile" required />
+      </label>
+      <button type="submit">Analyze Match</button>
+    </form>
+  </div>
+
+  <!-- Upload status -->
+  <div id="status"></div>
+
+  <!-- Summary panel -->
+  <div id="summary-panel" class="card hidden"></div>
+
+  <!-- Results -->
+  <div id="results" class="results-grid"></div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
