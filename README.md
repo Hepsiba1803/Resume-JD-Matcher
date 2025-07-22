@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Resume JD Matcher
 emoji: 📄
 colorFrom: indigo
@@ -135,3 +136,16 @@ MIT License – feel free to fork, use, and contribute.
 
 ```
 
+=======
+title: ResumeJD Matcher
+emoji: 🌖
+colorFrom: yellow
+colorTo: gray
+sdk: docker
+pinned: false
+license: mit
+short_description: Tune your resume to job description
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 4030eb572d8015c5f43b5bf6dee3a8b9bdb36fde
