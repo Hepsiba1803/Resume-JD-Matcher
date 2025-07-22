@@ -1,3 +1,13 @@
+---
+title: Resume JD Matcher
+emoji: 📄
+colorFrom: indigo
+colorTo: blue
+sdk: streamlit
+sdk_version: "1.29.0"
+app_file: streamlit_app.py
+pinned: false
+---
 # 🚀 Resume-JD Matcher
 
 An open-source, collaborative-ready platform that helps job seekers and recruiters **quickly compare resumes and job descriptions**, highlighting keyword matches and gaps. The tool is designed for both learning and team-style software development, and simulates modern **Applicant Tracking System (ATS)** workflows.
