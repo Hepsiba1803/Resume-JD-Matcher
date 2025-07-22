@@ -1,0 +1,1 @@
+-e "\n.vscode/\n.venv/\nvenv/\n.pytest_cache/\n__pycache__/\n*.pyc" 
